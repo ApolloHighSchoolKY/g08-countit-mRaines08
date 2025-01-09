@@ -1,4 +1,4 @@
-//© A+ Computer Science
+//ï¿½ A+ Computer Science
 // www.apluscompsci.com
 
 //array delete example
@@ -11,18 +11,29 @@ public class ArrayCount
 	 * states how many times val exists
 	 * in the array iRay
 	 */
+
+	 //static means it is a class level meathod
 	public static int countIt( int[] iRay, int val )
 	{
 		int count=0;
 
-
+		for(int bob: iRay)
+		{
+			if (bob == val)
+				count++;
+		}
 
 		return count;
 	}
 
 	public static void printIt( int[] iRay  )
 	{
+		System.out.print("[");
 
+		for(int i: iRay)
+			System.out.print(i + " ");
+
+		System.out.println("]");
 
 	}
 
